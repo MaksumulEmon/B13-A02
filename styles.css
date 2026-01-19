@@ -18,12 +18,14 @@
     font-size: 3rem;
     font-weight: 700;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .paragraph-text {
     font-size: 1rem;
     font-weight: 200;
     color: #FFFFFF;
+    opacity: 0.6;
 }
 
 
@@ -189,7 +191,7 @@
 /*----About The poscast  */
 .about-description {
     text-align: center;
-    padding: 10px 200px 40px 200px;
+    padding: 10px 200px 60px 200px;
 }
 
 hr {
@@ -224,6 +226,7 @@ hr {
     font-weight: 400;
     color: #FFFFFF;
     margin-top: 8px;
+    opacity: 0.6;
 }
 
 /*---Why  choose wavetack--------*/
@@ -232,7 +235,7 @@ hr {
     font-size: 3rem;
     font-weight: 700;
     color: #FFFFFF;
-    margin-top: 120px;
+    margin-top: 50px;
     margin-bottom: 40px;
 }
 
@@ -254,7 +257,6 @@ hr {
 #mobile {
     grid-area: mobile;
 }
-
 
 #global {
     grid-area: global;
@@ -289,6 +291,7 @@ hr {
     font-weight: 700;
     color: #FFFFFF;
     margin-top: 12px;
+
 }
 
 .choose p {
@@ -296,6 +299,55 @@ hr {
     font-weight: 300;
     color: #FFFFFF;
     margin-top: 12px;
+    opacity: 0.6;
+}
+
+
+/*Featured Episodes */
+.title-featured {
+    margin-top: 100px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.video-card h6 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.featute-video-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.video-card {
+    border-radius: 24px;
+    background: rgba(37, 13, 68, 1);
+    overflow: hidden;
+}
+
+.text-content {
+    padding: 24px;
+}
+
+.time {
+    display: flex;
+    margin: auto;
+    gap: 4px;
+    margin-top: 12px;
+}
+
+.time p {
+    color: #00FF88;
+    font-size: 1rem;
+    font-weight: 600;
+
 }
 
 /*-------------------Responsive------------------------*/
@@ -383,4 +435,27 @@ hr {
             "exclusive"
             "rich";
     }
+
+    /*Featured Episodes  */
+
+    .title-featured {
+        margin-top: 40px;
+        font-size: 3rem;
+        font-weight: 700;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .featute-video-section {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 16px;
+    }
+
+    .paragraph-text {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 }
