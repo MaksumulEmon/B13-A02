@@ -51,7 +51,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 16px 200px;
+    padding-top: 20px;
 
 }
 
@@ -105,7 +105,7 @@
     justify-content: center;
     align-items: center;
     padding: 69px 75px 81px 75px;
-    transform: translateY(-25px);
+    transform: translateY(-20px);
     position: relative;
 }
 
@@ -145,7 +145,7 @@
 }
 
 .btn-1 {
-    padding: 12px 16px;
+    padding: 12px 20px;
     border-radius: 100px;
     border: none;
     font-size: 1rem;
@@ -184,6 +184,120 @@
     margin-right: 8px;
 }
 
+
+
+/*----About The poscast  */
+.about-description {
+    text-align: center;
+    padding: 10px 200px 40px 200px;
+}
+
+hr {
+    border: px solid #FFFFFF;
+    opacity: 0.1;
+}
+
+.about-devlopment {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    align-items: center;
+}
+
+
+.about-devlopment {
+    text-align: center;
+
+    padding-top: 40px;
+    padding-bottom: 50px;
+
+}
+
+.about-devlopment h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #00FF88;
+}
+
+.about-devlopment p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 8px;
+}
+
+/*---Why  choose wavetack--------*/
+.header {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
+.choose>* {
+    padding: 40px;
+    font-size: 1rem;
+    font-weight: 200;
+    color: rgba(35, 14, 61, 1);
+    background: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+}
+
+#audio {
+    grid-area: audio;
+    align-content: center;
+
+}
+
+#mobile {
+    grid-area: mobile;
+}
+
+
+#global {
+    grid-area: global;
+}
+
+#exclusive {
+    grid-area: exclusive;
+}
+
+#rich {
+    grid-area: rich;
+}
+
+.choose {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "audio mobile mobile"
+        "audio global global"
+        "exclusive exclusive rich";
+}
+
+
+.choose img {
+    width: 40px;
+    height: 40px;
+
+}
+
+.choose h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-top: 12px;
+}
+
+.choose p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-top: 12px;
+}
+
 /*-------------------Responsive------------------------*/
 @media screen and (max-width: 576px) {
 
@@ -207,7 +321,6 @@
 
     /*Hero Section */
 
-
     .circle-img {
         transform: translateY(-8px);
     }
@@ -217,4 +330,57 @@
         padding-right: 12px;
     }
 
+
+    /*----About The poscast  */
+
+    .about-description {
+        padding: 10px;
+    }
+
+    .title-text {
+        font-size: 2rem;
+    }
+
+    .about-devlopment {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5;
+        padding: 8px;
+        padding-top: 20px;
+
+    }
+
+    .about-devlopment h1 {
+        font-size: 2rem;
+    }
+
+    .about-devlopment p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #FFFFFF;
+        margin-top: 8px;
+    }
+
+    /*---Why  choose wavetack--------*/
+
+    .header {
+        font-size: 3rem;
+    }
+
+    .header {
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .choose {
+
+        padding: 24px;
+        gap: 20px;
+        grid-template-areas:
+            "audio "
+            "mobile"
+            "global"
+            "exclusive"
+            "rich";
+    }
 }
