@@ -578,8 +578,8 @@ hr {
 
     /*  Footer--*/
     .social-link {
-
         grid-template-columns: repeat(2, auto);
         row-gap: 20px;
     }
+
 }
