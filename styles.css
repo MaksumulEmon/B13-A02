@@ -87,7 +87,6 @@ body {
 
 .hero {
     background-image: url(./assets/hero-bg.png);
-    /* object-fit: cover; */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -103,7 +102,7 @@ body {
     background-image: url(./assets/hero-circle.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-position: center; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,6 +160,33 @@ body {
 
 .btn-1:active {
     background: rgba(247, 233, 63, 1);
+}
+
+
+@keyframes updown {
+    0% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-7px);
+    }
+
+    40% {
+        transform: translateY(0px);
+    }
+
+    60% {
+        transform: translateY(-6px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.btn-1 {
+    animation: updown 1.8s ease-in-out infinite;
 }
 
 .btn-2 {
@@ -380,6 +406,7 @@ hr {
     font-weight: 700;
     color: #FFFFFF;
     margin-bottom: 16px;
+    margin-top: 16px;
 }
 
 .social-icone {
@@ -429,6 +456,9 @@ hr {
 
 
 /*-------------------Responsive------------------------*/
+
+
+
 @media screen and (max-width: 576px) {
 
     /* Nav Bar*/
@@ -503,7 +533,6 @@ hr {
     }
 
     .choose {
-
         padding: 24px;
         gap: 20px;
         grid-template-areas:
@@ -532,11 +561,6 @@ hr {
         padding: 16px;
     }
 
-    /*.paragraph-text {
-        padding-left: 0;
-        padding-right: 0;
-    } */
-
 
     /* Meet The Host  */
     .title-host {
@@ -554,9 +578,8 @@ hr {
 
     /*  Footer--*/
     .social-link {
-       
+
         grid-template-columns: repeat(2, auto);
         row-gap: 20px;
-       
     }
 }
